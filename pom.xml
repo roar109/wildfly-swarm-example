@@ -43,8 +43,6 @@
 				<version>${version.wildfly-swarm}</version>
 				<configuration>
 					<mainClass>org.rage.swarm.Main</mainClass>
-					<!-- <jboss.port.offset>2</jboss.port.offset> -->
-					<!-- <jboss.http.port>8082</jboss.http.port> -->
 				</configuration>
 				<executions>
 					<execution>
