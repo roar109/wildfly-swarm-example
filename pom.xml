@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.rage</groupId>
-	<artifactId>wilfy-swarm-example</artifactId>
+	<artifactId>wildfy-swarm-example</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
@@ -15,6 +15,7 @@
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>7.0</version>
+			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
@@ -32,8 +33,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -42,6 +43,8 @@
 				<version>${version.wildfly-swarm}</version>
 				<configuration>
 					<mainClass>org.rage.swarm.Main</mainClass>
+					<!-- <jboss.port.offset>2</jboss.port.offset> -->
+					<!-- <jboss.http.port>8082</jboss.http.port> -->
 				</configuration>
 				<executions>
 					<execution>

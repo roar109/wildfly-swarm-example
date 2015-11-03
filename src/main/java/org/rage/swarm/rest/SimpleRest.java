@@ -13,10 +13,17 @@ public class SimpleRest {
 	@Inject
 	private TrikitruDelegate delegate;
 
-	@Path("test")
 	@GET
+	@Path("test")
 	@Produces("text/html")
 	public String testi(){
 		return delegate.giveMeTheString();
+	}
+	
+	@GET
+	@Path("test2")
+	@Produces("text/html")
+	public String testi2(){
+		return delegate.giveMeTheString() + "-2";
 	}
 }
