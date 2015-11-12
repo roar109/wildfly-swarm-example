@@ -1,8 +1,9 @@
 package org.rage.swarm.rest;
 
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Application;
 
 @ApplicationPath("")
-public class ApplicationConfig {
+public class ApplicationConfig extends Application{
 
 }
